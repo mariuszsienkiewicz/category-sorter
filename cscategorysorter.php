@@ -12,7 +12,7 @@ class CsCategorySorter extends Module
     {
         $this->name = 'cscategorysorter';
         $this->tab = 'administration';
-        $this->version = '1.0.0';
+        $this->version = '1.0.1';
         $this->author = 'Codescape';
         $this->ps_versions_compliancy = [
             'min' => '1.7.5',
