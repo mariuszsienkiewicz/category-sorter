@@ -1,0 +1,26 @@
+services:
+  CsCategorySorter\Form\Type\CategorySorterType:
+    class: CsCategorySorter\Form\Type\CategorySorterType
+    arguments:
+      $categoryDataProvider: '@prestashop.adapter.data_provider.category'
+    parent: 'form.type.common_type'
+    public: true
+    tags:
+      - { name: form.type }
+
+  cs_category_sorter.form_handler:
+    class: 'PrestaShop\PrestaShop\Core\Form\FormHandler'
+    arguments:
+      $formBuilder: '@=service("form.factory").createBuilder()'
+      $hookDispatcher: '@prestashop.core.hook.dispatcher'
+      $formDataProvider: '@cs_category_sorter.form_provider'
+      $formTypes:
+        'category_sorter': 'CsCategorySorter\Form\Type\CategorySorterType'
+      $hookName: 'CategorySorterForm'
+  
+  cs_category_sorter.form_provider:
+    class: CsCategorySorter\Form\CategorySorterFormDataProvider
+
+  cs_category_sorter.data_updater:
+    class: CsCategorySorter\Adapter\Category\CategorySorterDataUpdater
+

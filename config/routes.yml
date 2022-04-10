@@ -1,0 +1,15 @@
+cs_category_sorter_index:
+  path: cs-category-sorter/index
+  methods: [GET]
+  defaults:
+    _controller: 'CsCategorySorter\Controller\CategorySorterController::index'
+    _legacy_controller: 'CategorySorterController'
+    _legacy_link: 'CategorySorterController'
+
+cs_category_sorter_process:
+  path: cs-category-sorter/process
+  methods: [POST]
+  defaults:
+    _controller: 'CsCategorySorter\Controller\CategorySorterController::process'
+    _legacy_controller: 'CategorySorterController'
+    _legacy_link: 'CategorySorterController'

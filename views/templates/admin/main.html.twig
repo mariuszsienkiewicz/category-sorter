@@ -1,0 +1,35 @@
+{% extends '@PrestaShop/Admin/layout.html.twig' %}
+{% import '@PrestaShop/Admin/macros.html.twig' as ps %}
+{% form_theme form 'PrestaShopBundle:Admin/TwigTemplateForm:prestashop_ui_kit.html.twig' %}
+
+{% block javascripts %}
+<script src="{{ asset('/modules/cscategorysorter/views/js/categorySorterForm.js') }}"></script>
+{% endblock %}
+
+{% set formAction = url('cs_category_sorter_process') %}
+
+{% block content %}
+{{form_start(form, {'action': formAction, 'attr': {'class': 'form', 'id': 'category_sorter_form'}})}}
+<div class="row justify-content-center">
+  <div class="col">
+    <div class="card">
+      <h3 class="card-header">
+        <i class="material-icons">settings</i> Form 
+      </h3>
+      <div class="card-block row">
+        <div class="card-text">
+          {{ form_row(form.category_sorter.categories) }}
+          {{ form_row(form.category_sorter.order) }}
+        </div>
+      </div>
+      <div class="card-footer">
+        <div class="d-flex justify-content-end">
+          <button class="btn btn-primary">{{ 'Save'|trans({}, 'Admin.Actions') }}</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{{form_end(form)}}
+
+{% endblock %}

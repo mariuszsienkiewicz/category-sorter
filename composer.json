@@ -1,0 +1,16 @@
+{
+    "name": "codescape-lab/cs-category-sorter",
+    "description": "Displays a column in products grid with visibility state",
+    "autoload": {
+        "psr-4": {
+            "CsCategorySorter\\": "src/"
+        }
+    },
+    "config": {
+        "prepend-autoloader": false
+    },
+    "type": "prestashop-module",
+    "require-dev": {
+        "prestashop/php-dev-tools": "^4.2"
+    }
+}
