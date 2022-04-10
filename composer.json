@@ -1,6 +1,6 @@
 {
     "name": "codescape-lab/cs-category-sorter",
-    "description": "Displays a column in products grid with visibility state",
+    "description": "Gives the possibility to sort the subcategories in PrestaShop",
     "autoload": {
         "psr-4": {
             "CsCategorySorter\\": "src/"
