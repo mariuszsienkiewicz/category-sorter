@@ -1,8 +1,6 @@
 services:
   CsCategorySorter\Form\Type\CategorySorterType:
     class: CsCategorySorter\Form\Type\CategorySorterType
-    arguments:
-      $categoryDataProvider: '@prestashop.adapter.data_provider.category'
     parent: 'form.type.common_type'
     public: true
     tags:
