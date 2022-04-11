@@ -4,7 +4,7 @@ Adds the ability in PrestaShop to sort subcategories of selected categories in a
 
 ## Usage
 
-This module will add its own tab in the products tab. Here you can select the parent category (you can select multiple at one time), choose the sort order, and click the save button. The module will do the rest of the work.
+This module will add its own tab in the catalog tab. Here you can select the parent category (you can select multiple at one time), choose the sort order, and click the save button. The module will do the rest of the work.
 
 ## Reporting issues
 
