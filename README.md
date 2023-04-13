@@ -1,7 +1,7 @@
 # PrestaShop Category Sorter
 
 [![Latest release](https://img.shields.io/github/v/release/mariuszsienkiewicz/category-sorter?label=Latest%20release)](https://github.com/mariuszsienkiewicz/category-sorter/releases)
-![Supported PrestaShop Version](https://img.shields.io/badge/Prestashop-&ge;1.7.5-gray?logo=prestashop)
+![Supported PrestaShop Version](https://img.shields.io/badge/Prestashop-&ge;1.7.8-gray?logo=prestashop)
 
 Adds the ability in PrestaShop to sort subcategories of selected categories in ascending or descending order.
 
